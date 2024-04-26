@@ -64,10 +64,10 @@ function App() {
 
 
     <div className="App">
-      <Template>
-        <Navbar></Navbar>
+      
 
         
+        <Navbar></Navbar>
         <Routes>
         <Route exact path="/" element={
             <div>
@@ -101,7 +101,7 @@ function App() {
         </Routes>
         <Footer></Footer>
 
-      </Template>
+
     </div>
 
 

@@ -39,6 +39,7 @@ function Navbar() {
 				                    <li class=" scroll active"><Link to="/userdocs">userdocs</Link></li>
 				                    <li class=" scroll active"><Link to="/track">track</Link></li>
 				                    <li class=" scroll active"><Link to="/certify">certify</Link></li>
+				                    <li class=" scroll active"><Link to="/social">Social</Link></li>
 				                    
 				                    
 				                </ul>
