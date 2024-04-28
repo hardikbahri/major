@@ -22,6 +22,7 @@ const Social = ({ contract, account, provider }) => {
                 //console.log(str_array);
                 return (
                     <div>
+                     
                     <p style={{ fontFamily: 'Arial', fontSize: '16px', fontWeight: 'bold' }}>
                       Author: {str_array[1]}
                     </p>
@@ -68,7 +69,7 @@ const Social = ({ contract, account, provider }) => {
             await window.ethereum.request({ method: 'eth_requestAccounts' });
             // Get the user's Ethereum address
             const accounts = await window.ethereum.request({ method: 'eth_accounts' });
-            const userAddress = accounts[0]; // Assuming the first address is the user's
+            const userAddress = accounts; // Assuming the first address is the user's
             // Set the user's address as the MetaMask user name
             setMetamaskUserName(userAddress);
           } catch (error) {
@@ -96,7 +97,7 @@ const Social = ({ contract, account, provider }) => {
 </div>
 <div style={{ display: 'flex', justifyContent: 'center', marginTop: '20px' }}>
     <Button class="tweet-button" onClick={fetchData}>
-    User: {metamaskUserName}
+    Get Information
     </Button>
 </div>
 
@@ -112,8 +113,9 @@ const Social = ({ contract, account, provider }) => {
     <img src="https://pbs.twimg.com/profile_images/1012717264108318722/9lP-d2yM_400x400.jpg" alt="" class="avator" />
     <div class="tweet-header-info">
         {console.log("yadav randi",data)}
+        {metamaskUserName[index]}
       <span>{data[index]}</span><span></span>
-      <p>🔥 </p> 
+      <p>🔥</p> 
     </div>
   </div>
 ))}
